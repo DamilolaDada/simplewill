@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Meristem Trustees Limited</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/494c4a27ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER SECTION  -->
+  <div class="header">
+    <img src="images/Trustees 1.png" class="logo">
+    <h2>LAST WILL AND TESTAMENT</h2>
+  </div>
+  <form class="main-form" action="" method="">
+    <!-- progress Bar -->
+    <div class="progressbar">
+      <div class="progress" id="progress"></div>
+      <div class="progress-step progress-step-active" data-title="Get Started"></div>
+      <div class="progress-step" data-title="Personal Information"></div>
+      <div class="progress-step" data-title="Asset Details"></div>
+      <div class="progress-step" data-title="Spouses & Beneficiaries"></div>
+      <div class="progress-step" data-title="Confirmation & Checkout"></div>
+      <div class="progress" id="progress"></div>
+    </div>
+    <div class="form-step form-step-active">
+      <div class="content">
+        <h1>Create a simple will <br> in minutes</h1>
+        <button type="button" name="button" class="next-btn btn btn-next">GET STARTED</button>
+      </div>
+    </div>
+
+
+    <!-- PAGE 2 -->
+    <div class="form-step">
+      <!-- <p>fill all inputs</p> -->
+      <div class="container">
+        <div class="first-layer">
+          <div class="row">
+            <div class="col-25">
+              <label for="">Title</label>
+            </div>
+            <div class="col-75">
+              <select class="title-input title" id="input-title" name="title">
+                <option value="">-- select option --</option>
+                <option value="mr">Mr</option>
+                <option value="mrs">Mrs</option>
+                <option value="miss">Miss</option>
+                <option value="dr">Dr</option>
+                <option value="prof">Prof</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Surname <span>*</span> </label>
+            </div>
+            <div class="col-75">
+              <input class="input-details surname " id="input-surname" type="text" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Name <span>*</span> </label>
+            </div>
+            <div class="col-75">
+              <input class="input-details name" id="input-name" type="text" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Other Names <span>*</span> </label>
+            </div>
+            <div class="col-75">
+              <input class="input-details other-name" id="input-other-name" type="text" name="" value="">
+            </div>
+          </div>
+        </div>
+        <div class="second-layer">
+          <div class="row">
+            <div class="col-25">
+              <label for="">Phone Number <span>*</span></label>
+            </div>
+            <div class="col-75">
+              <input class="input-details phone-num" id="input-phone-num" type="number" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Address</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-1" id="input-address" type="text" name="" value="">
+            </div>
+          </div>
+        </div>
+        <div class="third-layer">
+          <div class="row">
+            <div class="col-25">
+              <label for="">Company Name</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details" id="input-company-name" type="text" name="" value="">
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Company Address</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-1" id="input-company-address" type="text" name="" value="">
+            </div>
+          </div>
+        </div>
+        <div class="forth-layer">
+          <div class="row">
+            <div class="col-25">
+              <label for="">Marital Status</label>
+            </div>
+            <div class="col-75">
+              <select class="input-details" id="input-marital-status" name="Marital-Status">
+                <option value="NIN">-- select option --</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="separated">Seperated</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Type of Marriage</label>
+            </div>
+            <div class="col-75">
+              <select class="input-details" id="input-type-marriage" name="Marital-Status">
+                <option value="NIN">-- select option --</option>
+                <option value="legal">Statutory</option>
+                <option value="traditional">Customary</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Means of Identification <span>*</span></label>
+            </div>
+            <div class="col-75">
+              <select class="input-details identity" id="mod" name="Marital-Status">
+                <option value="NIN">-- select option --</option>
+                <option value="NIN">National ID</option>
+                <option value="v-card">Voters Card</option>
+                <option value="passport">International Passport</option>
+                <option value="passport">Drivers License</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="first-layer">
+          <div class="row">
+            <div class="col-25">
+              <label for="">Identification Number <span>*</span></label>
+            </div>
+            <div class="col-75">
+              <input class="input-details identity-num" id="id-numb" type="number" name="" value="">
+            </div>
+          </div>
+
+        </div>
+        <div class="">
+          <span>* <em> please fill required fields</em></span>
+        </div>
+
+        <button type="button" class="back btn-prev btn" name="button">Previous</button>
+        <button type="button" class="next-btn btn-next btn space-btn reveal-btn" name="button">Next</button>
+
+      </div>
+    </div>
+
+    <!-- page3 -->
+
+    <div class="container-1 form-step">
+      <div class="second-layer">
+        <div class="row">
+          <div class="col-25">
+            <label for="">PFA <span>*</span></label>
+          </div>
+          <div class="col-75">
+            <select class="input-details pfa" id="input-pfa" name="">
+              <option value="NIN">-- select option --</option>
+              <option value="NIN">ARM Pension Managers Limited</option>
+              <option value="NIN">Crusader Sterling Pensions Limited</option>
+              <option value="NIN">FCMB Pensions Limited</option>
+              <option value="NIN">Fidelity Pensions Managers</option>
+              <option value="NIN">First Guarantee Pension Limited</option>
+              <option value="NIN">Guarnatee Trust Pension Managers Limited</option>
+              <option value="NIN">IEI-Anchor Pension Managers Limited</option>
+              <option value="NIN">Leadway Pensure PFA Limited</option>
+              <option value="NIN">Nigerian University Pension Management Company</option>
+              <option value="NIN">NLPC Pension Fund Administrators Limited</option>
+              <option value="NIN">NPF Pensions Limited </option>
+              <option value="NIN">Oak Pensions Limited</option>
+              <option value="NIN">Pensions Alliance Limited</option>
+              <option value="NIN">Premiun Pension Limited</option>
+              <option value="NIN">Radix Pension Managers Limited</option>
+              <option value="NIN">Sigma Pensions Limited</option>
+              <option value="NIN">Stanbic IBTC Pension Managers Limited</option>
+              <option value="NIN">Tangerine APT Pensions Limited</option>
+              <option value="NIN">Trustfunds Pensions Limited</option>
+              <option value="NIN">Veritas Glanvills Pensions Limited</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="">RSA Number <span>*</span></label>
+          </div>
+          <div class="col-75">
+            <input class="input-details rsa-number" id="rsa-numb" type="number" name="" value="">
+          </div>
+        </div>
+      </div>
+
+      <h2>BANK DETAILS</h2>
+
+      <div class="second-layer">
+        <div class="row">
+          <div class="col-25">
+            <label for="">Bank Name <span>*</span></label>
+          </div>
+          <div class="col-75">
+            <select class="input-details bank-name" id="banks-names" name="">
+              <option value="NIN">-- select option --</option>
+              <option value="NIN">Zenith Bank</option>
+              <option value="NIN">Access Bank</option>
+              <option value="NIN">First Bank</option>
+              <option value="NIN">United Bank of Africa</option>
+              <option value="NIN">Guarantee Trust Bank</option>
+              <option value="NIN">Sterling Bank PLC</option>
+              <option value="NIN">Stanbic IBTC Bank</option>
+              <option value="NIN">Fidelity Bank</option>
+              <option value="NIN">Union Bank of Nigeria</option>
+              <option value="NIN">ECOBANK Nigeria</option>
+              <option value="NIN">WEMA Bank of Nigeria</option>
+            </select>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="">Account Name <span>*</span></label>
+          </div>
+          <div class="col-75">
+            <input class="input-details acc-name" id="accnt-name" type="text" name="" value="">
+          </div>
+        </div>
+      </div>
+
+      <div class="second-layer">
+        <div class="row">
+          <div class="col-25">
+            <label for="">Account Number <span>*</span></label>
+          </div>
+          <div class="col-75">
+            <input class="input-details acc-numb" id="accnt-nmb" type="number" name="" value="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="">Branch</label>
+          </div>
+          <div class="col-75">
+            <input class="input-details" id="input-branch" type="text" name="" value="">
+          </div>
+        </div>
+      </div>
+      <div class="" id="append-col"></div>
+
+      <div class="">
+        <button id="add_more_1" type="button" name="button">Add More</button>
+        <button id="remove_1" type="button" name="button" hidden>Remove</button>
+      </div>
+      <div class="">
+        <span>* <em> please fill required fields</em></span>
+      </div>
+      <button type="button" class="back btn-prev btn" name="button">Previous</button>
+      <button type="button" class="next-btn btn-next space-btn-1 btn reveal-btn2" name="button">Next</button>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="form-step">
+      <div class="container">
+        <div class="second-layer">
+          <div class="row">
+            <div class="col-25">
+              <label for="">Name of Spouse</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details spouse-name" id="sps-name" type="text" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Address</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-1 address" id="input-address" type="text" name="" value="">
+            </div>
+          </div>
+        </div>
+        <div class="second-layer">
+          <div class="row">
+            <div class="col-25">
+              <label for="">No of Dependents</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details" id="nod" type="number" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Names of Dependents <span>*</span></label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-1 name-of-dep" id="nm-of-dep" type="text" name="" value="">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="">Names of Children <span>*</span></label>
+          </div>
+          <div class="col-75">
+            <input class="input-details-1 name-of-dep" id="no-children" type="text" name="" value="">
+          </div>
+        </div>
+        <h2>BENEFICIARY DETAILS</h2>
+        <div class="first-layer">
+          <div class="row" id="row1">
+            <div class="col-25">
+              <label for="">Full Name <span>*</span></label>
+            </div>
+            <div class="col-75">
+              <input class="input-details full-name" id="fl-name" type="text" name="" value="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="">Email <span>*</span></label>
+            </div>
+            <div class="col-75">
+              <input class="input-details email" id="ben-mail" type="email" name="" value="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="">Address</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details" id="ben-add" type="text" name="" value="">
+            </div>
+          </div>
+        </div>
+
+        <div class="second-layer">
+          <div class="row">
+            <div class="col-25">
+              <label for="">Gift</label>
+            </div>
+            <div class="col-75">
+              <select class="input-details" id="" name="">
+                <option value="">-- select option --</option>
+                <option value="">RSA</option>
+                <option value="">Cash</option>
+            </select>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="">Phone</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details phone" id="ben-phone" type="number" name="" value="">
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-25">
+              <label for="">Values (% OR Amount)</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details" id="ben-value" type="number" name="" value="">
+            </div>
+          </div>
+        </div>
+        <div class="" id="append-col_1"></div>
+        <div class="benefits">
+          <button id="add_more" type="button" name="button"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add More</button>
+          <!-- <button id="remove" type="button" name="button" hidden>Remove</button> -->
+        </div>
+        <div class="">
+          <span>* <em> please fill required fields</em></span>
+        </div>
+
+        <button type="button" class="back btn-prev btn" name="button">Previous</button>
+        <button type="button" class="next-btn btn-next space-btn btn reveal-btn1" name="button">Next</button>
+      </div>
+    </div>
+
+    <!-- CHECKOUT-INFORMATION -->
+    <div class="form-step">
+      <div class="checkout-info">
+        <h2>Would you like Meristem Trustees Limited to lodge this will for you? </h2>
+        <label for=""><input id="show" type="radio" name="yes" value="yes"> YES <input id="hide" type="radio" name="yes" value="No" checked> NO </label>
+
+        <div class="payment container">
+          <table>
+            <tr>
+              <td class="table-design">Meristem Service Fee</td>
+              <td>₦75,000</td>
+            </tr>
+        </div>
+        </table>
+        <p class="light-text"><input class="check-box" type="checkbox" name="" value=""> By checking this box, I confirm that I am at least 18 years of age and I have read and agreed to Meristem's Terms of Service & Privacy Notice </p>
+        <p>click <a href="https://forms.meristemng.com/wp-content/uploads/2022/09/TC-for-Wills.pdf" target="_blank" rel="noopener noreferrer" >here</a> for terms and conditions </p>
+        <button onclick="payWithPaystack()" disabled type="button" class="pay-button" name="button">Pay Now</button>
+      </div>
+      <div class="nav-buttons">
+        <button type="button" class="back btn-prev btn prev-btn" name="button">Back</button>
+        <button type="submit" class="space-btn btn submit-btn" name="button" disabled>Submit</button>
+
+      </div>
+    </div>
+
+
+  </form>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="main.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+
+
+
+</body>
+
+</html>
