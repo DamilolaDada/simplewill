@@ -226,6 +226,18 @@ $("#add_more_1").click(function(e) {
                      <input class="input-details" type="text" name="" value="">
                    </div>
                  </div>
+               </div>
+               <div class="row">
+                 <div class="col-25">
+                   <label for="">Account Type</label>
+                 </div>
+                 <div class="col-75">
+                   <select class="input-details" name="">
+                     <option value="">--select type--</option>
+                     <option value="">Savings</option>
+                     <option value="">Current</option>
+                   </select>
+                 </div>
                </div>`;
     $("#append-col").append($(newElementForm));
 
@@ -236,125 +248,245 @@ $("#add_more_1").click(function(e) {
   displayHidden()
 });
 
-$(document).on('click', '#remove_1', function() {
-  $(this).closest('#inputFormRow').remove();
+
+var y = 1;
+var maxi_fields = 10; //maximum input boxes allowed
+$("#add_more").click(function(e) {
+
+  e.preventDefault();
+  if (x <= maxi_fields) {
+    var newElementForms = `  <div class="first-layer">
+        <div class="row" id="row1">
+          <div class="col-25">
+            <label for="">Full Name <span>*</span></label>
+          </div>
+          <div class="col-75">
+            <input class="input-details full-name" id="fl-name" type="text" name="" value="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="">Email <span>*</span></label>
+          </div>
+          <div class="col-75">
+            <input class="input-details email" id="ben-mail" type="email" name="" value="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="">Address</label>
+          </div>
+          <div class="col-75">
+            <input class="input-details" id="ben-add" type="text" name="" value="">
+          </div>
+        </div>
+      </div>
+
+      <div class="second-layer">
+        <div class="row">
+          <div class="col-25">
+            <label for="">Gift</label>
+          </div>
+          <div class="col-75">
+            <select class="input-details" id="" name="">
+              <option value="">-- select option --</option>
+              <option value="">RSA</option>
+              <option value="">Cash</option>
+          </select>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="">Phone</label>
+          </div>
+          <div class="col-75">
+            <input class="input-details phone" id="ben-phone" type="number" name="" value="">
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-25">
+            <label for="">Values (% OR Amount)</label>
+          </div>
+          <div class="col-75">
+            <input class="input-details" id="ben-value" type="number" name="" value="">
+          </div>
+        </div>
+      </div>`;
+    $("#append-col_1").append($(newElementForms));
+
+  } else {
+    alert("maximum banks reached")
+  }
+
+  displayHidden()
 });
 
+var z = 1;
+var maxim_fields = 10;
+$("#add_more_2").click(function(e) {
+  e.preventDefault();
+  if (z <= maxim_fields) {
+    var newElementsForms =
+      `  <div id="sharesDetails">
+          <div class="first-layer">
+
+            <div class="">
+              <label for="">Name of Share Holder :</label>
+              <div class="book_date">
+                <input id="country1" name="person_bankName[]" class="person_bankName frm-field required sect input-details bank-name">
+              </div>
+            </div>
+            <div>
+              <label for="">House Name of Shares :</label>
+              <div class="book_date">
+                <input id="person_accountNumber" name="person_shares_name" type="text" class="person_moreAccountNumber acc-numb input-details" value="">
+              </div>
+            </div>
+
+          </div>
+          <div class="second-layer">
+            <div class="">
+              <label for="">CSCS Number:</label>
+              <div class="book_date">
+                <input id="person_accountBranch" name="person_cscs_number" type="text" value="" class="input-details">
+              </div>
+            </div>
+            <div class="">
+              <label for="">Clearing House of Shares :</label>
+              <div class="book_date">
+                <input id="country1" name="person_clearing_house" class="input-details">
+                <!-- note do an edit to pull data -->
+              </div>
+            </div>
+          </div>
+        </div>`;
+        $("#append-col-2").append($(newElementsForms));
+
+      } else {
+        alert("maximum banks reached")
+      }
+    });
 
 
 // REQUIRED FIELDS PAGE 2
-//
-// const revealBtn = document.querySelector(".reveal-btn");
-// const name = document.querySelector(".name");
-// const surname = document.querySelector(".surname");
-// const phoneNum = document.querySelector(".phone-num")
-// const identity = document.querySelector(".identity")
-// const identityNum = document.querySelector(".identity-num")
-//
+
+const revealBtn = document.querySelector(".reveal-btn");
+const name = document.querySelector(".name");
+const surname = document.querySelector(".surname");
+const phoneNum = document.querySelector(".phone-num")
+const identity = document.querySelector(".identity")
+const identityNum = document.querySelector(".identity-num")
+
 // deactivate()
-//
-// function activate() {
-//   revealBtn.disabled = false;
-//   revealBtn.style.backgroundColor = "#366999";
-//   revealBtn.style.cursor = "pointer";
-// }
-// function deactivate() {
-//   revealBtn.disabled = true;
-//   revealBtn.style.backgroundColor = "#cdd5da";
-//   revealBtn.style.cursor = "not-allowed";
-// }
-// function check() {
-//   if (name.value != '' && surname.value != '' && phoneNum.value != '' && identity.value != '' && identityNum.value != '') {
-//     activate()
-//   } else {
-//     deactivate()
-//   }
-// }
-// name.addEventListener('input', check)
-// surname.addEventListener('input', check)
-// phoneNum.addEventListener('input', check)
-// identity.addEventListener('input', check)
-// identityNum.addEventListener('input', check)
-//
-//
-// // REQUIRED FIELDS PAGE 3
-//
-// const revealBtn1 = document.querySelector(".reveal-btn1")
-// const fullName =  document.querySelector(".full-name")
-// const phone =  document.querySelector(".phone")
-// const email =  document.querySelector(".email")
-// const spouseName =  document.querySelector(".spouse-name")
-// const address =  document.querySelector(".address")
-// const nameOfDep =  document.querySelector(".name-of-dep")
-//
-//
-//
+
+function activate() {
+  revealBtn.disabled = false;
+  revealBtn.style.backgroundColor = "#366999";
+  revealBtn.style.cursor = "pointer";
+}
+function deactivate() {
+  revealBtn.disabled = true;
+  revealBtn.style.backgroundColor = "#cdd5da";
+  revealBtn.style.cursor = "not-allowed";
+}
+function check() {
+  if (name.value != '' && surname.value != '' && phoneNum.value != '' && identity.value != '' && identityNum.value != '') {
+    activate()
+  } else {
+    deactivate()
+  }
+}
+name.addEventListener('input', check)
+surname.addEventListener('input', check)
+phoneNum.addEventListener('input', check)
+identity.addEventListener('input', check)
+identityNum.addEventListener('input', check)
+
+
+// REQUIRED FIELDS PAGE 3
+
+const revealBtn1 = document.querySelector(".reveal-btn1")
+const fullName =  document.querySelector(".full-name")
+const phone =  document.querySelector(".phone")
+const spouseName =  document.querySelector(".spouse-name")
+const address =  document.querySelector(".address")
+const nameOfDep =  document.querySelector(".name-of-dep")
+
+
+
 // deactivate1()
-//
-//
-// function activate1() {
-//   revealBtn1.disabled = false;
-//   revealBtn1.style.backgroundColor = "#366999";
-//   revealBtn1.style.cursor = "pointer";
-// }
-//
-// function deactivate1() {
-//   revealBtn1.disabled = true;
-//   revealBtn1.style.backgroundColor = "#cdd5da";
-//   revealBtn1.style.cursor = "not-allowed";
-// }
-//
-//
-// function check1() {
-//   if (fullName.value != '' && phone.value != '' && email.value !='' && nameOfDep.value !=''){
-//     activate1()
-//   } else {
-//     deactivate1()
-//   }
-// }
-// fullName.addEventListener('input', check1)
-// phone.addEventListener('input', check1)
-// email.addEventListener('input', check1)
-//
-// nameOfDep.addEventListener('input', check1)
-//
-// // REQUIRED FIELDS PAGE 4
-//
-// const revealBtn2 = document.querySelector(".reveal-btn2");
-// const rsaNumber =  document.querySelector(".rsa-number");
-// const accNum =  document.querySelector(".acc-numb");
-// const bankName =  document.querySelector(".bank-name");
-// const pfa =  document.querySelector(".pfa");
-// const accName = document.querySelector('.acc-name')
-//
+
+
+function activate1() {
+  revealBtn1.disabled = false;
+  revealBtn1.style.backgroundColor = "#366999";
+  revealBtn1.style.cursor = "pointer";
+}
+
+function deactivate1() {
+  revealBtn1.disabled = true;
+  revealBtn1.style.backgroundColor = "#cdd5da";
+  revealBtn1.style.cursor = "not-allowed";
+}
+
+
+function check1() {
+  if (fullName.value != '' && phone.value != '' && nameOfDep.value !=''){
+    activate1()
+  } else {
+    deactivate1()
+  }
+}
+fullName.addEventListener('input', check1)
+phone.addEventListener('input', check1)
+nameOfDep.addEventListener('input', check1)
+
+// REQUIRED FIELDS PAGE 4
+
+const revealBtn2 = document.querySelector(".reveal-btn2");
+const rsaNumber =  document.querySelector(".rsa-number");
+const accNum =  document.querySelector(".acc-numb");
+const bankName =  document.querySelector(".bank-name");
+const pfa =  document.querySelector(".pfa");
+const accName = document.querySelector('.acc-name')
+
 // deactivate2()
-//
-//
-// function activate2() {
-//   revealBtn2.disabled = false;
-//   revealBtn2.style.backgroundColor = "#366999";
-//   revealBtn2.style.cursor = "pointer";
-// }
-//
-// function deactivate2() {
-//   revealBtn2.disabled = true;
-//   revealBtn2.style.backgroundColor = "#cdd5da";
-//   revealBtn2.style.cursor = "not-allowed";
-// }
-//
-//
-// function check2() {
-//   if (rsaNumber.value != '' && accNum.value != '' && bankName.value !='' && pfa.value !='' && accName.value != '') {
-//     activate2()
-//   } else {
-//     deactivate2()
-//   }
-// }
-// rsaNumber.addEventListener('input', check2)
-// accNum.addEventListener('input', check2)
-// bankName.addEventListener('input', check2)
-// pfa.addEventListener('input', check2)
-// accName.addEventListener('input', check2)
+
+
+function activate2() {
+  revealBtn2.disabled = false;
+  revealBtn2.style.backgroundColor = "#366999";
+  revealBtn2.style.cursor = "pointer";
+}
+
+function deactivate2() {
+  revealBtn2.disabled = true;
+  revealBtn2.style.backgroundColor = "#cdd5da";
+  revealBtn2.style.cursor = "not-allowed";
+}
+
+
+function check2() {
+  if (rsaNumber.value != '' && accNum.value != '' && bankName.value !='' && pfa.value !='' && accName.value != '') {
+    activate2()
+  } else {
+    deactivate2()
+  }
+}
+rsaNumber.addEventListener('input', check2)
+accNum.addEventListener('input', check2)
+bankName.addEventListener('input', check2)
+pfa.addEventListener('input', check2)
+accName.addEventListener('input', check2)
+
+
+
 
 //          // TOGGLE CHECKBOX
 
@@ -380,20 +512,40 @@ $('.check-box').click(function() {
 
 
 
-// const inputName  = document.getElementById("#input-name").value
-// const inputOtherName  = document.getElementById("#input-other-name")
-// const inputPhoneNum  = document.getElementById("#input-phone-num")
-// const inputAddress  = document.getElementById("#input-add")
-// const inputCompanyName  = document.getElementById("#input-company-name")
-// const inputCompanyAddress = document.getElementById("#input-company-address")
-// const inputMaritalStatus  = document.getElementById("#input-marital-status")
-// const inputTypeMarriage  = document.getElementById("#input-type-marriage")
-// const mod  = document.getElementById("#mod")
-// const idNumb  = document.getElementById("#id-numb");
-// const inputSurname  = document.getElementById("#input-surname").value;
-// const submitBtn = document.querySelector('.submit-btn');
-//
-// submitBtn.addEventListener("click", (e)=>{
-//   e.preventDefault()
-//   console.log(inputSurname)
-// })
+ const drafting = document.getElementById('drafting');
+ const custodyFee = document.getElementById('custody-fee');
+
+ function changeStyle (){
+    custodyFee.style.display = "none";
+  };
+
+  function revertStyle (){
+    custodyFee.style.display = "block";
+  };
+
+  const description = document.getElementById('description');
+
+  function changeStyle1 (){
+     description.style.display = "none";
+     drafting.style.display = "block";
+
+   };
+
+   function revertStyle1 (){
+     description.style.display = "block";
+       drafting.style.display = "none";
+   };
+
+
+
+
+const handleSubmit = async (e, submitEl) => {
+  e.preventDefault()
+  console.dir(submitEl)
+  const data = await fetch("http://192.168.11.182:3000", {
+    method: "POST",
+    body: {name: "Daniel"}
+  })
+  console.log(data);
+  console.log(data.json())
+}

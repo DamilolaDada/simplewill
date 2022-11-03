@@ -4,7 +4,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-input {}
+input {
+  padding: 0 10px;
+  border: 1px solid black;
+}
 
 .header {
   background-color: #A5BECC;
@@ -113,7 +116,7 @@ input {}
 
 label {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #000000;
 }
 
@@ -172,23 +175,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-.benefits {
-  align-items: center;
-  margin: auto;
-  position: relative;
-}
-
-#add_benef {
-  border-radius: 50%;
-  background: #5091CD;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  margin: 30px auto;
-  cursor: pointer;
-  color: #fff;
-}
 
 .text_add {
   text-align: center;
@@ -197,19 +183,12 @@ h2 {
 
 .title-input {
   height: 30px;
-  margin: 20px 0;
+  margin: 24px 0;
   border-radius: 5px;
-  width: 65px;
+  width: 80px;
 }
 
-/* .next {
-  background: #5091CD;
-  color: #fff;
-  padding: 10px 18px;
-  display: inline-block;
-  position: absolute;
-  right: 100px;
-} */
+
 .back {
   color: #000000;
   margin: 30px solid #5091CD;
@@ -229,15 +208,9 @@ h2 {
   display: block;
 }
 
-.benefits {
-  align-items: center;
-  margin: auto;
-  position: relative;
-}
 
-#hidden-row {
-  display: none;
-}
+
+
 
 .next-btn {
   margin-top: 3em;
@@ -293,13 +266,15 @@ h2 {
   width: 60%;
 }
 
-#add_more, #add_more_1 {
+#add_more, #add_more_1, #add_more_2{
   padding: 5px 10px;
   margin-top: 1.5em;
   background: #5091CD;
   color: #fff;
   border: none;
 }
+
+
 
 #remove_1, #remove {
   padding: 5px 10px;
@@ -386,4 +361,11 @@ span{
 
 .rev-btn{
   margin-top: 2em;
+}
+.termspage{
+  margin-top: 1em;
+}
+
+#custody-fee, #description{
+  display: none;
 }
