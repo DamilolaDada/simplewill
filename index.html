@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/494c4a27ef.js" crossorigin="anonymous"></script>
+  <script src="./scripts/forms.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +16,8 @@
     <img src="images/Trustees 1.png" class="logo">
     <h2>LAST WILL AND TESTAMENT</h2>
   </div>
-  <form class="main-form" action="http://192.168.11.182:3000/" method="post" onsubmit="handleSubmit(event, this)">
+<!--  action="http://192.168.11.182:3000/" method="post"-->
+  <form class="main-form" onsubmit="handleFormSubmit(event)">
     <!-- progress Bar -->
     <div class="progressbar">
       <div class="progress" id="progress"></div>
@@ -35,6 +37,7 @@
 
 
     <!-- PAGE 2 -->
+
     <div class="form-step" id="personal_info">
       <!-- <p>fill all inputs</p> -->
       <div class="container">
@@ -342,7 +345,7 @@
 
 
     <!-- PAGE 4 -->
-    <div class="form-step" id="beneficiaries">
+    <div class="form-step" id="beneficiaries_details">
       <div class="container">
         <div class="second-layer">
           <div>
@@ -368,7 +371,7 @@
               <label for="">No of Dependents</label>
             </div>
 
-            <input class="input-details" id="nod" type="number" name="person_dependent" value="">
+            <input class="input-details" id="nod" type="number" name="person_no_dependent" value="">
 
           </div>
           <div>
