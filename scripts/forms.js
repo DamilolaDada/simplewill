@@ -50,8 +50,8 @@ async function handleFormSubmit(e) {
   }
 
   try {
-    const { data } = await axios.post("https://895b-41-216-175-81.eu.ngrok.io/users/register", registrationDetails)
-    console.log(data)
+    await axios.post("https://895b-41-216-175-81.eu.ngrok.io/users/register", registrationDetails)
+    alert("Account Created")
   } catch (e) {
     console.log(e)
   }
