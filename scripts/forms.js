@@ -1,13 +1,13 @@
 function transformData(inputArr) {
   const dataObj = {}
   for (const input of inputArr) {
-    dataObj[input.name] = input.value
+    dataObj[input.name] = input.type === "number" ? Number(input.value) : input.value
   }
 
   return dataObj
 }
 
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
   e.preventDefault()
   const personalDetailsEl = document.getElementById("personal_info")
   const assetDetailsEl = document.getElementById("asset_details")
@@ -39,15 +39,20 @@ function handleFormSubmit(e) {
     spouseAndBeneficiariesDetailsEl.querySelectorAll("select")
   ]
 
-  const spouse_and_beneficiaries_details = transformData(spouseAndBeneficiariesInputFields)
-  Object.assign(spouse_and_beneficiaries_details, transformData(spouseAndBeneficiariesDetailsSelectFields))
+  const spouse_and_beneficiaries_detailS = transformData(spouseAndBeneficiariesInputFields)
+  Object.assign(spouse_and_beneficiaries_detailS, transformData(spouseAndBeneficiariesDetailsSelectFields))
 
 
   const registrationDetails = {
     asset_details,
-    person_details,
-    spouse_and_beneficiaries_details
+    ...person_details,
+    spouse_and_beneficiaries_detailS
   }
 
-  console.log(registrationDetails)
+  try {
+    const { data } = await axios.post("https://895b-41-216-175-81.eu.ngrok.io/users/register", registrationDetails)
+    console.log(data)
+  } catch (e) {
+    console.log(e)
+  }
 }
