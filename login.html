@@ -1,55 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Simple Will Admin Login</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="bg-secondary">
-        <div id="layoutAuthentication">
-            <div id="layoutAuthentication_content">
-                <main>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-5">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Welcome</h3></div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="User Name"/>
-                                                <label for="inputEmail">User Name</label>
-                                            </div>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                                <label for="inputPassword">Password</label>
-                                            </div>
-                                            <div class="form-check mb-3">
-                                                <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-                                                <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
-                                            </div>
-                                        </form>
-                                    </div>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
+<style media="screen">
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  body{
+    font-style: 'roboto';
+    background: #6c757d;
+  }
+  .container{
+    width: 40%;
+    margin: 150px auto;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    padding: 35px;
+  }
+  .container h1{
+    margin: 25px auto;
+
+  }
+  label{
+    display: block;
+    text-align: left;
+    margin: 15px 0;
+  }
+  input{
+    width: 100%;
+    height:35px;
+    border-radius: 5px;
+   border: 1px solid black;
+   padding: 5px 7px;
+  }
+
+  button{
+    width: 50%;
+    padding: 10px 25px;
+    margin-top: 25px;
+    background: #0d6efd;;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+
+</style>
+
+      <div class="container">
+        <h2>SIMPLE WILL ADMIN LOGIN</h2>
+        <h1> Welcome</h1>
+        <div class="container__mail">
+          <label for="">Email Address</label>
+          <input type="text" name="" value="">
         </div>
-    
-        <script src="js/scripts.js"></script>
-    </body>
+        <div class="container__password">
+          <label for="">Password</label>
+          <input type="password" name="" value="">
+        </div>
+
+        <button type="button" name="button">Sign in</button>
+      </div>
+
+  </body>
 </html>
