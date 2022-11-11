@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <title>Admin</title>
   <script src="https://kit.fontawesome.com/494c4a27ef.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <link rel="stylesheet" href="../../styles/style.css">
+  <script src="../../scripts/admin.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
@@ -14,7 +16,7 @@
 <body>
 <nav class="navbar">
   <div class="navbar__logo">
-    <img src="Trustees 1.png" alt="">
+    <img src="../../adminWill/Trustees%201.png" alt="">
   </div>
 
   <div class="navbar__user">
@@ -41,7 +43,8 @@
 </div>
 
 <div class="details">
-<table>
+
+<table id="table">
   <tr>
     <th>id</th>
     <th>Full Name</th>
@@ -51,6 +54,7 @@
     <th>PDF</th>
     <th>Print</th>
   </tr>
+
 </table>
 </div>
 

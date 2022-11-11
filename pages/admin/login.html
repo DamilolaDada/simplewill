@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../styles/user_styles.css">
   </head>
   <body>
 
@@ -58,16 +58,18 @@
       <div class="container">
         <h2>SIMPLE WILL ADMIN LOGIN</h2>
         <h1> Welcome</h1>
-        <div class="container__mail">
-          <label for="">Email Address</label>
-          <input type="text" name="" value="">
-        </div>
-        <div class="container__password">
-          <label for="">Password</label>
-          <input type="password" name="" value="">
-        </div>
+        <form action="https://8b47-41-216-175-81.eu.ngrok.io/" method="post">
+          <div class="container__mail">
+            <label for="email">Email Address</label>
+            <input type="text" name="email" id="email" required>
+          </div>
+          <div class="container__password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
 
-        <button type="button" name="button">Sign in</button>
+          <button type="submit" name="button">Sign in</button>
+        </form>
       </div>
 
   </body>

@@ -1,0 +1,14 @@
+.modal_component {
+    position: relative;
+    padding: .4rem;
+    border: 1px solid lightgray;
+    /*background-color: #279427;*/
+    background: url("ugui");
+}
+
+.modal_component i {
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    color: gray;
+}

@@ -19,7 +19,7 @@ input {
   margin: auto;
 }
 
-/* progress bar section */
+
 #progress.progress {
   background-color: #366999;
   width: 0%;
@@ -142,7 +142,7 @@ label {
   margin-right: 20px;
 }
 
-/* PAGE-5 DESIGN */
+
 .checkout-info {
   position: relative;
   text-align: center;
